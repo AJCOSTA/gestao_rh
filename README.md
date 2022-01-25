@@ -1,1 +1,2 @@
-# gestao_rh
+# Sistema desenvolvido em python, com o framework django 
+
