@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+{% load static %}
+{% block  main %}
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form|bootstrap }}
+        <h1 class="justify-content-around">Você Deseja mesmo deletar a hora extra {{  object }} ?</h1>
+
+        {{ form }}
+
+
+        <button type="submit" class="btn btn-danger">Confirmar</button>
+    </form>
+
+{% endblock %}
